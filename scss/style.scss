@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+// 헤더영역
+header {
+    margin: 30px 0 50px;
+
+    #logo {
+        font-family: 'drfont_daraehand';
+        font-size: 3rem;
+        color: #222;
+        text-align: center;
+    }
+}
+
+// 본문영역
+main {
+    width: 1800px;
+    height: 750px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #menu {
+        width: 13%;
+        height: 100%;
+
+        background-color: red;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        font-family: 'LeeSeoyun';
+
+        .menu_title {
+            padding-top: 30px;
+            box-sizing: border-box;
+
+            font-size: 1.2rem;
+        }
+
+        .side_menu {
+           width: 90%;
+           height: 625px;
+           overflow: auto;
+
+           border: 1px solid black;
+        }
+
+        .create_list_btn {
+            margin-bottom: 15px;
+            font-family: 'LeeSeoyun';
+        }
+    }
+
+    #diary_container {
+        width: 85%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: aqua;
+
+        .inner {
+            width: 95%;
+            height: 90%;
+            overflow: auto;
+
+            border: 1px solid black;
+        }
+    }
+}
+
+// 푸터영역
+footer {
+    font-family: 'LeeSeoyun';
+    text-align: center;
+    margin-top: 20px;
+}
