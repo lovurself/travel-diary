@@ -2,7 +2,7 @@
 
 // 헤더영역
 header {
-    margin: 30px 0 50px;
+    margin: 50px 0 35px;
 
     #logo {
         font-family: 'drfont_daraehand';
@@ -26,7 +26,8 @@ main {
         width: 13%;
         height: 100%;
 
-        background-color: red;
+        background-color: #212529;
+        border-radius: 15px;
 
         display: flex;
         flex-direction: column;
@@ -39,20 +40,38 @@ main {
             padding-top: 30px;
             box-sizing: border-box;
 
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            color: #f8f9fa;
         }
 
         .side_menu {
-           width: 90%;
+           width: 88%;
            height: 625px;
            overflow: auto;
 
-           border: 1px solid black;
+           background-color: #f8f9fa;
+           border-radius: 15px;
         }
 
         .create_list_btn {
+            all: unset;
             margin-bottom: 15px;
+
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background-color: #c0eb75;
+            border-radius: 10px;
             font-family: 'LeeSeoyun';
+
+            transition: all .5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e9fac8;
+            }
+            &:active {
+                background-color: #a9e34b;
+            }
         }
     }
 
@@ -64,14 +83,13 @@ main {
         justify-content: center;
         align-items: center;
 
-        background-color: aqua;
+        border: 2px solid #212529;
+        border-radius: 15px;
 
         .inner {
             width: 95%;
             height: 90%;
             overflow: auto;
-
-            border: 1px solid black;
         }
     }
 }

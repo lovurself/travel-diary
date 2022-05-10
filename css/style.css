@@ -1,5 +1,5 @@
 header {
-  margin: 30px 0 50px;
+  margin: 50px 0 35px;
 }
 
 header #logo {
@@ -27,7 +27,8 @@ main {
 main #menu {
   width: 13%;
   height: 100%;
-  background-color: red;
+  background-color: #212529;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,19 +49,38 @@ main #menu .menu_title {
   padding-top: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #f8f9fa;
 }
 
 main #menu .side_menu {
-  width: 90%;
+  width: 88%;
   height: 625px;
   overflow: auto;
-  border: 1px solid black;
+  background-color: #f8f9fa;
+  border-radius: 15px;
 }
 
 main #menu .create_list_btn {
+  all: unset;
   margin-bottom: 15px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #c0eb75;
+  border-radius: 10px;
   font-family: 'LeeSeoyun';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+main #menu .create_list_btn:hover {
+  background-color: #e9fac8;
+}
+
+main #menu .create_list_btn:active {
+  background-color: #a9e34b;
 }
 
 main #diary_container {
@@ -75,14 +95,14 @@ main #diary_container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aqua;
+  border: 2px solid #212529;
+  border-radius: 15px;
 }
 
 main #diary_container .inner {
   width: 95%;
   height: 90%;
   overflow: auto;
-  border: 1px solid black;
 }
 
 footer {
